@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .header {
+            background: #263ca8;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        nav {
+            background: #ffffff;
+            padding: 1rem;
+            text-align: center;
+          }
+          nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        .container {
+            max-width: none;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+            display: flex;         
+            gap: 10px;            
+            justify-content: center; 
+           }
+           .image-gallery img {
+           width: 20%;            
+           height: auto;          
+           object-fit: cover;     
+           border-radius: 8px;    
+           }
+        .back {
+            margin-top: 20px;
+        }
+        .back a {
+            text-decoration: none;
+            color: #263ca8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <header>
+        <h1>การออกแบบระบบ System Design & Architecture Project Portfolio</h1>
+      </header>
+      <nav class="navbar">
+        <a href="portfolio.html" class="logo">My Portfolio</a>
+        <a href="portfolio.html#about">About</a>
+        <a href="portfolio.html#contact">Contact</a>
+      </nav>
+</div>
+
+<div class="container">
+    <h2>ระบบบริหารจัดการและจองคิวคลินิกทันตกรรม (Dental Clinic Appointment & Management System)</h2>
+    <p>
+        การออกแบบระบบบริหารจัดการและจองคิวคลินิกทันตกรรมไม่ได้เป็นเพียงแค่การวาดรูปให้สวยงาม แต่เป็นขั้นตอนที่สำคัญเหมือน "การเขียนพิมพ์เขียว (Blueprint) ก่อนสร้างบ้านและมีปรพโยชน์เช่น
+        <ul>
+            <li>เพื่อกำหนดขอบเขตงานให้ชัดเจน (Scope Definition)</li>
+            <li>เพื่อวางแผนการไหลของข้อมูลให้ไม่ผิดพลาด (Data Flow Logic)</li>
+            <li>เพื่อโครงสร้างฐานข้อมูลที่ถูกต้องและมีประสิทธิภาพ (Database Integrity)</li>
+            <li>เพื่อป้องกันข้อผิดพลาดในการทำงานของโปรแกรม (Error Handling & Logic)</li></ul>
+        </p>
+    <p>
+        <div style="display: flex; align-items: center; gap: 20px; max-width: auto; margin: 0 auto;">
+            <div style="flex: 1;">
+              <img src="images/e1.png" alt="แผนผังก้างปลา" style="width: 100%; height: auto; border-radius: 10px;">
+            </div>
+              <div style="flex: 1;">
+                   <h2>ก่อนที่จะออกแบบต้องรู้ปัญหาที่เกิดขึ้นก่อนว่ามีอะไรบ้าง</h2>
+                  <p>ก่อนเริ่มพัฒนาระบบ ได้ใช้ Fishbone Diagram วิเคราะห์หาสาเหตุของปัญหาในการจัดการคิวรูปแบบเดิม โดยพบอุปสรรคสำคัญ 5 ด้าน ได้แก่ ความพร้อมของอุปกรณ์, กระบวนการทำงานที่ซับซ้อน, ความถูกต้องของข้อมูล, ปัจจัยด้านบุคลากร และสภาพแวดล้อม การวิเคราะห์นี้ช่วยให้ระบุปัญหาหลัก เช่น การไม่มีระบบจองออนไลน์ และความผิดพลาดจากการใช้กระดาษ นำไปสู่การออกแบบฟีเจอร์ในระบบใหม่ที่แก้ปัญหาได้ตรงจุด</p>
+              </div>
+        </div>
+        <h2>Flowchart</h2>
+        <p> นี้แสดงตรรกะการทำงาน (Business Logic) ของระบบจองคิวทันตกรรม โดยได้ออกแบบให้รองรับ Error Handling ในส่วนของการ Login (จำกัดจำนวนครั้งที่ผิด) และเน้นความถูกต้องของข้อมูลในส่วนของการจอง (Booking Validation) ซึ่งระบบจะมีการตรวจสอบสถานะว่างของห้องตรวจแบบ Real-time (Decision Checking) ก่อนที่จะอนุญาตให้บันทึกลงฐานข้อมูล เพื่อป้องกันปัญหาการจองซ้อน (Double Booking)</p>
+        <div class="image-gallery">
+            <img src="images/e2.jpg" alt="การเข้าสู่ระบบ">
+            <img src="images/e3.jpg" alt="การจองคิว">
+            <img src="images/e4.jpg" alt="การแก้ไขหรือยกเลิก">
+        </div>
+      </div>
+         <h2>DFD/Context Diagram</h2>
+         <p> ใช้เพื่อสื่อสารภาพรวมและขอบเขตของระบบกับผู้ใช้งานทั่วไป ส่วน DFD ใช้เพื่อแสดงขั้นตอนการทำงานและการไหลของข้อมูลอย่างละเอียดสำหรับนักพัฒนาระบบ</p>
+         <div class="image-gallery">
+             <img src="images/e5.jpg" alt="0">
+             <img src="images/e6.jpg" alt="1">
+             <img src="images/e7.jpg" alt="2">
+             <img src="images/e8.jpg" alt="2">
+        </div>
+
+</div>
+
+</body>
+</html>
