@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="UTF-8">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,6 +50,17 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
+    .about-box {
+     display: flex;          /* จัดให้อยู่ในบรรทัดเดียวกัน */
+     align-items: center;    /* จัดกึ่งกลางตามแนวตั้ง */
+     gap: 20px;              /* ระยะห่างระหว่างข้อความกับรูป */
+    }
+
+    .about-box img {
+     width: 200px;
+    border-radius: 10px;
+    border: 3px solid #333;
+    }
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -73,7 +84,8 @@
 <body>
   <header>
     <h1>My Portfolio</h1>
-    <p>Frontend Developer | Designer | Creator</p>
+    <p>"The function of good software is to make the complex appear to be simple" </p>
+    <p>Grady Booch</p>
   </header>
 
   <nav>
@@ -83,26 +95,31 @@
   </nav>
 
   <div class="container">
-    <section id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-box">
-        <p>Hello! I am Ms. Ekkawalee Charin, a student at Rajamangala University of Technology Thanyaburi (RMUTT), Faculty of Science and Technology, IC Program. I am currently studying Web Application and website development with HTML and CSS.</p>
-        <img src="c:\Users\Asus\Downloads\รูป.jpg" alt="My Photo" style="width:200px; margin-top:15px; border-radius:10px;">
-      </div>
-    </section>
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-box">
+    <p>
+      Hello! I am Ms. Ekkawalee Charin, a student at Rajamangala University of 
+      Technology Thanyaburi (RMUTT), Faculty of Science and Technology, IC Program. 
+      I am currently studying Web Application and website development with HTML and CSS.
+    </p>
+
+    <img src="/Milk/images/profile.jpg" alt="My Photo">
+  </div>
+</section>
 
     <section id="projects">
-      <h2 class="section-title">performance</h2>
+      <h2 class="section-title">Performance</h2>
       <div class="projects">
         <div class="project-card">
-          <img src="c:\Users\Asus\Downloads\สกรีนช็อต 2025-12-09 185529.png" alt="Cerli Photo" style="width:100%; border-radius:10px; margin-bottom:10px;">
+          <img src="/Milk/images/a1.png" alt="ER Diagram Photo" style="width:100%; border-radius:10px; margin-bottom:10px;">
           <h3>ER Diagram</h3>
           <p>Database design for a recruitment platform, visualizing the relationships between companies, job positions, and applicants.</p>
         </div>
         <div class="project-card">
-          <img src="your-photo.jpg" alt="Cerli Photo" style="width:100%; border-radius:10px; margin-bottom:10px;">
-          <h3>Cerli item</h3>
-          <p>คำอธิบายสั้น ๆ</p>
+          <img src="/Milk/images/1.png" alt="ยาเสพติด Photo" style="width:100%; border-radius:10px; margin-bottom:10px;">
+          <h3>Drug education project</h3>
+          <p>Drug Awareness & Prevention Education  To educate middle school students about the dangers of narcotics, their classifications, and their impact on society.</p>
         </div>
         <div class="project-card">
           <img src="your-photo.jpg" alt="Cerli Photo" style="width:100%; border-radius:10px; margin-bottom:10px;">
