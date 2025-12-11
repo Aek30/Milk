@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open port.html",
-            "file": "d:\\GitHub\\Milk\\Milk\\port.html"
+            "name": "Open portfolio.html",
+            "file": "d:\\GitHub\\Milk\\portfolio.html"
         }
     ]
 }
